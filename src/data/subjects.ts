@@ -1,5 +1,5 @@
 
-import { Dna, Globe, Code, Calculator, Palette, Music } from 'lucide-react';
+import { Atom, Beaker, Calculator, Code } from 'lucide-react';
 
 export interface Flashcard {
   id: string;
@@ -18,70 +18,109 @@ export interface Subject {
 
 export const subjects: Subject[] = [
   {
-    id: 'biology',
-    title: 'Biology Basics',
-    description: 'Fundamental concepts in biology including cell structure, genetics, and evolution.',
-    icon: Dna,
-    estimatedTime: '15-20 min',
+    id: 'physics',
+    title: 'Physics Fundamentals',
+    description: 'Basic principles of physics including motion, forces, energy, and waves.',
+    icon: Atom,
+    estimatedTime: '20-25 min',
     cards: [
       {
-        id: 'bio1',
-        question: 'What is the basic unit of life?',
-        answer: 'The cell is the basic unit of life. All living organisms are composed of one or more cells.'
+        id: 'phys1',
+        question: 'What is Newton\'s First Law of Motion?',
+        answer: 'An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.'
       },
       {
-        id: 'bio2',
-        question: 'What is photosynthesis?',
-        answer: 'Photosynthesis is the process by which plants convert sunlight, carbon dioxide, and water into glucose and oxygen.'
+        id: 'phys2',
+        question: 'What is the formula for kinetic energy?',
+        answer: 'KE = ½mv², where m is mass and v is velocity.'
       },
       {
-        id: 'bio3',
-        question: 'What is DNA?',
-        answer: 'DNA (Deoxyribonucleic acid) is the molecule that carries genetic information in living organisms.'
+        id: 'phys3',
+        question: 'What is the speed of light in a vacuum?',
+        answer: 'The speed of light in a vacuum is approximately 299,792,458 meters per second (3.00 × 10⁸ m/s).'
       },
       {
-        id: 'bio4',
-        question: 'What are the main stages of mitosis?',
-        answer: 'The main stages are: Prophase, Metaphase, Anaphase, and Telophase (PMAT).'
+        id: 'phys4',
+        question: 'What is the difference between velocity and speed?',
+        answer: 'Speed is a scalar quantity (magnitude only), while velocity is a vector quantity (magnitude and direction).'
       },
       {
-        id: 'bio5',
-        question: 'What is natural selection?',
-        answer: 'Natural selection is the process where organisms with favorable traits are more likely to survive and reproduce.'
+        id: 'phys5',
+        question: 'What is gravitational acceleration on Earth?',
+        answer: 'Gravitational acceleration on Earth is approximately 9.8 m/s² or 32 ft/s².'
       }
     ]
   },
   {
-    id: 'history',
-    title: 'World History',
-    description: 'Key events and figures that shaped our world from ancient times to modern era.',
-    icon: Globe,
-    estimatedTime: '20-25 min',
+    id: 'chemistry',
+    title: 'Chemistry Basics',
+    description: 'Essential chemistry concepts including atomic structure, chemical bonds, and reactions.',
+    icon: Beaker,
+    estimatedTime: '18-22 min',
     cards: [
       {
-        id: 'hist1',
-        question: 'When did World War II end?',
-        answer: 'World War II ended on September 2, 1945, with Japan\'s formal surrender.'
+        id: 'chem1',
+        question: 'What is an atom?',
+        answer: 'An atom is the smallest unit of matter that retains the properties of an element, consisting of protons, neutrons, and electrons.'
       },
       {
-        id: 'hist2',
-        question: 'Who was the first President of the United States?',
-        answer: 'George Washington was the first President of the United States, serving from 1789 to 1797.'
+        id: 'chem2',
+        question: 'What is the periodic table?',
+        answer: 'The periodic table is an organized arrangement of chemical elements ordered by their atomic number and properties.'
       },
       {
-        id: 'hist3',
-        question: 'What year did the Berlin Wall fall?',
-        answer: 'The Berlin Wall fell on November 9, 1989, marking a significant moment in the end of the Cold War.'
+        id: 'chem3',
+        question: 'What is a covalent bond?',
+        answer: 'A covalent bond is a chemical bond formed when two atoms share one or more pairs of electrons.'
       },
       {
-        id: 'hist4',
-        question: 'When did the Industrial Revolution begin?',
-        answer: 'The Industrial Revolution began in Britain around 1760 and spread to other parts of the world.'
+        id: 'chem4',
+        question: 'What is the difference between an element and a compound?',
+        answer: 'An element consists of only one type of atom, while a compound is made up of two or more different elements chemically bonded together.'
       },
       {
-        id: 'hist5',
-        question: 'What was the Renaissance?',
-        answer: 'The Renaissance was a period of cultural rebirth in Europe from the 14th to 17th centuries, marked by advances in art, science, and philosophy.'
+        id: 'chem5',
+        question: 'What is pH?',
+        answer: 'pH is a scale that measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), with 7 being neutral.'
+      }
+    ]
+  },
+  {
+    id: 'math',
+    title: 'Mathematics',
+    description: 'Core mathematical concepts including algebra, geometry, and basic calculus.',
+    icon: Calculator,
+    estimatedTime: '22-28 min',
+    cards: [
+      {
+        id: 'math1',
+        question: 'What is the quadratic formula?',
+        answer: 'x = (-b ± √(b² - 4ac)) / 2a, where a, b, and c are coefficients in the equation ax² + bx + c = 0.'
+      },
+      {
+        id: 'math2',
+        question: 'What is the Pythagorean theorem?',
+        answer: 'In a right triangle, a² + b² = c², where c is the hypotenuse and a and b are the other two sides.'
+      },
+      {
+        id: 'math3',
+        question: 'What is the derivative of x²?',
+        answer: 'The derivative of x² is 2x.'
+      },
+      {
+        id: 'math4',
+        question: 'What is the area of a circle?',
+        answer: 'The area of a circle is πr², where r is the radius.'
+      },
+      {
+        id: 'math5',
+        question: 'What is the slope-intercept form of a line?',
+        answer: 'y = mx + b, where m is the slope and b is the y-intercept.'
+      },
+      {
+        id: 'math6',
+        question: 'What is the value of π (pi)?',
+        answer: 'π is approximately 3.14159, representing the ratio of a circle\'s circumference to its diameter.'
       }
     ]
   },
